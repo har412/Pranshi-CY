@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            font-family: 'algerian';
+            font-weight: 500;
+        }
+
+        .box{
+            width: 400px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin:auto;
+            padding: 30px;
+            box-shadow: 0px 0px 30px 6px white;
+        }
+        .form-data{
+            display: flex;
+            flex-direction: column;
+
+        }
+        input{
+            margin-bottom:15px;
+            padding: 10px 10px;
+        }
+        textarea{
+            margin-bottom: 15px;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(to right top,aqua,rgb(119, 119, 220),purple);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Registration Form </h1>
+
+    <div class="box">
+
+        <!-- method: GET , POST -  get request means when user in frontend makes a request to backend without any data.
+                                 - post request means when user in frontend gives data to the backend says please store this data. -->
+
+            <!-- Action : means the location where you want your data to go  . -->
+
+        <form action="/submit/data" method="POST"  class="form-data">
+
+                <input type="text" placeholder="Enter you name here" >
+                <input type="Email" placeholder="Enter you Email here" >
+                <input type="number" placeholder="Enter you Contact Number " >
+                <input type="date" placeholder="Enter you Date of birth" >
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div>
+                Choose Your Gender : <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other
+                </div>
+                <div>
+                    Choose Your Subjects you wanna Study : <br> <input type="checkbox">Maths <input type="checkbox"> Science <input type="checkbox"> Social Studies <input type="checkbox"> Art
+                </div>
+                <input type="submit" >
+
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+</body>
+</html>
